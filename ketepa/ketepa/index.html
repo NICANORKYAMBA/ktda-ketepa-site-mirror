@@ -3183,6 +3183,9 @@
       </div>
     </div>
     <style>
+      body {
+        overflow-x: hidden !important;
+      }
       .ribbo-widget-wrapper {
         position: fixed !important;
         z-index: 2147483647 !important;
@@ -3190,13 +3193,26 @@
         visibility: visible !important;
         bottom: 20px !important;
         right: 20px !important;
+        left: auto !important;
+        transform: none !important;
+      }
+      .ribbo-widget-wrapper .ribbo-widget-iframeWrapper {
+        position: static !important;
+      }
+      .ribbo-widget-wrapper .ribbo-widget-iframe {
+        position: absolute !important;
+        bottom: 80px !important;
+        right: 0 !important;
+        left: auto !important;
       }
       .ribbo-widget-button-wrapper {
         opacity: 1 !important;
         visibility: visible !important;
+        position: static !important;
       }
       .ribbo-widget-button-wrapper button {
-        position: relative !important;
+        position: static !important;
+        margin: 0 !important;
       }
     </style>
     <script>
